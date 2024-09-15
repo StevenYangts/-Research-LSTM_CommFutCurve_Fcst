@@ -15,4 +15,5 @@ Three different commodity futures data were retrieved from the Bloomberg Termina
 The dataset composes daily prices of the three commodities spanning from Jan/3/2000 to Jun/13/2023, or a total of 6117 observation after excluding non-trading days. Each observation consists of the price data of 13 contracts with different time to maturity, 1-12 months, and two years to maturity. In other words, each observation represents a futures curve containing 13 points on a given date.
 
 ### **Model Architecture**
-<img src="[https://example.com/image.png](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch_2.png)" alt="Alt text" width="300"/>
+![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch_2.png)
+
