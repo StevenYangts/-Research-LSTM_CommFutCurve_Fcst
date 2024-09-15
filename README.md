@@ -44,7 +44,7 @@ Within an LSTM cell, different gates (forget gate, input gate, and output gate) 
   * The input gate adds new information to the current cell state.
   * The output gate produces the hidden state for the next time step.
 
- Figure below demonstrates how an LSTM cell works, xt and ht is the input and output at time t. ht-1 is the output from the previous cell which is also an input in this current cell. it, ft, and ot indicate the input gate, forget gate, and output gate respectively where ct demonstrated the memory cell that 
+Figure below demonstrates how an LSTM cell works, xt and ht is the input and output at time t. ht-1 is the output from the previous cell which is also an input in this current cell. it, ft, and ot indicate the input gate, forget gate, and output gate respectively where ct demonstrated the memory cell that 
 store the past state. Sigmoid and tanh are the activation functions that map non-linearity.<br>
 
 ![LSTM CELL Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_Cell.png)
@@ -59,9 +59,9 @@ This section describes the two LSTM models used in the study: LSTM-Base and LSTM
 
 Both models share the same design, consisting of:<br>
 
-2 LSTM layers with 50 units each, using Glorot initialization to prevent gradient issues.
-2 Dropout layers to prevent overfitting, with a 20% dropout rate.
-Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).
+2 LSTM layers with 50 units each, using Glorot initialization to prevent gradient issues.<br>
+2 Dropout layers to prevent overfitting, with a 20% dropout rate.<br>
+Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).<br>
 The models are compiled using the Adam optimizer with an 80%-10%-10% train-validation-test split.
 
 ![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch.png) <br>
