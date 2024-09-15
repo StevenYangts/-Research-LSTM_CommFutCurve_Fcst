@@ -59,10 +59,10 @@ This section describes the two LSTM models used in the study: LSTM-Base and LSTM
 
 Both models share the same design, consisting of:<br>
 
-2 LSTM layers with 50 units each, using Glorot initialization to prevent gradient issues.<br>
-2 Dropout layers to prevent overfitting, with a 20% dropout rate.<br>
-Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).<br>
-The models are compiled using the Adam optimizer with an 80%-10%-10% train-validation-test split.
+ * 2 LSTM layers with 50 units each, using Glorot initialization to prevent gradient issues.<br>
+ * 2 Dropout layers to prevent overfitting, with a 20% dropout rate.<br>
+ * Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).<br>
+ * The models are compiled using the Adam optimizer with an 80%-10%-10% train-validation-test split.
 
 ![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch.png) <br>
 
