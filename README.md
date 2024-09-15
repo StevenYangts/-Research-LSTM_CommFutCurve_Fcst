@@ -64,7 +64,8 @@ Both models share the same design, consisting of:<br>
 Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).
 The models are compiled using the Adam optimizer with an 80%-10%-10% train-validation-test split.
 
-![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch.png)
+![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch.png) <br>
+
 ![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch_2.png) <br>
 
 
@@ -75,26 +76,39 @@ The models are compiled using the Adam optimizer with an 80%-10%-10% train-valid
 **LSTM-NS**: The raw price data are parameterized into 4 parameters (beta0, beta1, beta2, and lambda). The input shape for the LSTM-NS model is [# of samples, 300, 4] <br>
 
 
+
 ### Target Forecast Curves 
 
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NG_curve_ot.png)
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Brent_curve_ot.png)
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/WTI_curve_ot.png)
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NG_curve_ot.png) <br>
+
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Brent_curve_ot.png) <br>
+
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/WTI_curve_ot.png) <br>
 
 
 ### **Sample Result Display for WTI Futures**
 
 **Within-model Performance**
 
-*LSTM-Base*
+*LSTM-Base* <br>
+
 ![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_Base_result.png)
 
-*LSTM_NS*
+*LSTM_NS* <br>
+
 ![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_NS_result.png)
 
 
 **Cross-model Performance**
 
+*Natural Gas*<br>
+
 ![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NG_result.png)
+
+*Brent* <br>
+
 ![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Brent_result.png)
+
+*WTI*<br>
+
 ![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/WTI_result.png)
