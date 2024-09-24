@@ -23,7 +23,7 @@ This paper builds upon the research from Figueiredo and Saporito (2022) to compa
 The Nelson-Siegel model was introduced by Nelson and Siegel (1987) to predict yield curves. Scholars later adapted this method for predicting commodity futures due to the similar structures between yield and futures curves. This study examines whether feeding LSTM models with futures curve parameter values as inputs improves the predictive performance of the LSTM model compared to using raw price data as inputs.
 
 The Nelson-Siegel (NS) model parameterizes the futures curve data into three parameters as shown below:
-![NS Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NS_Formula.png)
+![NS Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/NS_Formula.png)
 
 Where: <br>
 
