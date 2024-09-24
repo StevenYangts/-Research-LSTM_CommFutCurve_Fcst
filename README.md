@@ -47,11 +47,11 @@ Within an LSTM cell, different gates (forget gate, input gate, and output gate) 
 Figure below demonstrates how an LSTM cell works, xt and ht is the input and output at time t. ht-1 is the output from the previous cell which is also an input in this current cell. it, ft, and ot indicate the input gate, forget gate, and output gate respectively where ct demonstrated the memory cell that 
 store the past state. Sigmoid and tanh are the activation functions that map non-linearity.<br>
 
-![LSTM CELL Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_Cell.png)
+![LSTM CELL Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/LSTM_Cell.png)
 
 Following equations summarize the the operation of the LSTM layers adapted from previous research and articles (Olah 2015, Vijayaprabakaran and Sathiyamurthy 2022, and Figueiredo and Saporito 2022)
 
-![LSTM CELL Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Gate_act_fcts.png)
+![LSTM CELL Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/Gate_act_fcts.png)
 
 This section describes the two LSTM models used in the study: LSTM-Base and LSTM-NS.
 
@@ -64,9 +64,9 @@ Both models share the same design, consisting of:<br>
  * Early stopping to monitor validation loss and reduce training iterations if improvement stalls (patience parameter: 5).<br>
  * The models are compiled using the Adam optimizer with an 80%-10%-10% train-validation-test split.
 
-![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch.png) <br>
+![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/Model_arch.png) <br>
 
-![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Model_arch_2.png) <br>
+![Model Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/Model_arch_2.png) <br>
 
 
 **Input and Output Differences**
@@ -79,36 +79,36 @@ Both models share the same design, consisting of:<br>
 
 ### Target Forecast Curves 
 
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NG_curve_ot.png) <br>
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/NG_curve_ot.png) <br>
 
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Brent_curve_ot.png) <br>
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/Brent_curve_ot.png) <br>
 
-![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/WTI_curve_ot.png) <br>
+![Curve Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/WTI_curve_ot.png) <br>
 
 
-### **Sample Result Display for WTI Futures**
+### **Result Display**
 
 **Within-model Performance**
 
 *LSTM-Base* <br>
 
-![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_Base_result.png)
+![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/LSTM_Base_result.png)
 
 *LSTM_NS* <br>
 
-![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/LSTM_NS_result.png)
+![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/LSTM_NS_result.png)
 
 
 **Cross-model Performance**
 
 *Natural Gas*<br>
 
-![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/NG_result.png)
+![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/NG_result.png)
 
 *Brent* <br>
 
-![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Brent_result.png)
+![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/Brent_result.png)
 
 *WTI*<br>
 
-![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/WTI_result.png)
+![Result Display](https://github.com/StevenYangts/Research-LSTM_CommFutCurve_Fcst/blob/main/Diagrams/WTI_result.png)
